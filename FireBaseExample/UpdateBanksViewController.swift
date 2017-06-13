@@ -18,6 +18,15 @@ class UpdateBanksViewController: UIViewController {
     var fireBaseKey:String?;
     
     
+    @IBAction func goToManageExpenses(_ sender: Any) {
+        
+        let objManageExpenseViewController = self.storyboard?.instantiateViewController(withIdentifier: "ManageExpenseViewController") as! ManageExpenseViewController;
+        //objUpdateBanksViewController.oBank = oBank //pass on the object from the main screen
+        self.navigationController?.pushViewController(objManageExpenseViewController, animated: true);
+    
+    }
+
+
     @IBOutlet weak var lblFireBaseKey: UILabel!
     @IBOutlet weak var txtBankName: UITextField!
     @IBOutlet weak var txtBankType: UITextField!

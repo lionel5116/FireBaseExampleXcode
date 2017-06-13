@@ -170,6 +170,18 @@
                                     <action selector="updateBank:" destination="hbZ-jm-8ch" eventType="touchUpInside" id="TxG-T7-GYv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLf-nD-Nrp">
+                                <rect key="frame" x="84" y="317" width="207" height="20"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="o1v-4J-CvP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Manage Expenses"/>
+                                <connections>
+                                    <action selector="goToManageExpenses:" destination="hbZ-jm-8ch" eventType="touchUpInside" id="Xrq-mq-GVS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -178,9 +190,11 @@
                             <constraint firstItem="FjO-7V-mkd" firstAttribute="leading" secondItem="Rxh-Ib-KAk" secondAttribute="leadingMargin" constant="68" id="4mO-X5-pwL"/>
                             <constraint firstItem="Npq-vS-KFX" firstAttribute="top" secondItem="6oK-el-SEG" secondAttribute="bottom" constant="8" symbolic="YES" id="Fej-rP-j5R"/>
                             <constraint firstItem="6oK-el-SEG" firstAttribute="trailing" secondItem="NyD-a2-oUd" secondAttribute="trailing" id="GcD-4P-zYY"/>
+                            <constraint firstItem="OLf-nD-Nrp" firstAttribute="leading" secondItem="FjO-7V-mkd" secondAttribute="leading" id="JIr-6H-sik"/>
                             <constraint firstItem="6iZ-Th-eJx" firstAttribute="centerX" secondItem="NyD-a2-oUd" secondAttribute="centerX" id="Mbr-ke-LiL"/>
                             <constraint firstItem="6oK-el-SEG" firstAttribute="top" secondItem="NyD-a2-oUd" secondAttribute="bottom" constant="8" symbolic="YES" id="NvM-La-9eo"/>
                             <constraint firstItem="NyD-a2-oUd" firstAttribute="leading" secondItem="Rxh-Ib-KAk" secondAttribute="leadingMargin" constant="7" id="Oog-hu-Hzz"/>
+                            <constraint firstItem="OLf-nD-Nrp" firstAttribute="trailing" secondItem="FjO-7V-mkd" secondAttribute="trailing" id="Tiq-x4-Cqk"/>
                             <constraint firstItem="NyD-a2-oUd" firstAttribute="top" secondItem="6iZ-Th-eJx" secondAttribute="bottom" constant="13" id="UVt-cF-q3e"/>
                             <constraint firstItem="FjO-7V-mkd" firstAttribute="centerX" secondItem="Rxh-Ib-KAk" secondAttribute="centerX" id="UwZ-jI-xV8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NyD-a2-oUd" secondAttribute="trailing" constant="16" id="akQ-Kv-khC"/>
@@ -188,6 +202,7 @@
                             <constraint firstItem="6iZ-Th-eJx" firstAttribute="leading" secondItem="Rxh-Ib-KAk" secondAttribute="leadingMargin" constant="14" id="gEc-Q7-4UZ"/>
                             <constraint firstItem="Npq-vS-KFX" firstAttribute="leading" secondItem="6oK-el-SEG" secondAttribute="leading" id="gVM-eT-KcU"/>
                             <constraint firstItem="FjO-7V-mkd" firstAttribute="top" secondItem="Npq-vS-KFX" secondAttribute="bottom" constant="26" id="htQ-Ev-7qU"/>
+                            <constraint firstItem="OLf-nD-Nrp" firstAttribute="top" secondItem="FjO-7V-mkd" secondAttribute="bottom" constant="42" id="qsf-EN-KrS"/>
                             <constraint firstItem="Npq-vS-KFX" firstAttribute="trailing" secondItem="6oK-el-SEG" secondAttribute="trailing" id="xPw-9P-GHK"/>
                         </constraints>
                     </view>
@@ -201,6 +216,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hoc-0e-1Ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1696.8" y="123.68815592203899"/>
+        </scene>
+        <!--Manage Expense View Controller-->
+        <scene sceneID="qA6-wg-SUe">
+            <objects>
+                <viewController storyboardIdentifier="ManageExpenseViewController" id="T7M-wm-Zkq" customClass="ManageExpenseViewController" customModule="FireBaseExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M9G-lY-y4G"/>
+                        <viewControllerLayoutGuide type="bottom" id="tK6-F2-wuL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mVo-vL-5v8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEb-aw-DXx">
+                                <rect key="frame" x="16" y="79" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aEb-aw-DXx" firstAttribute="trailing" secondItem="mVo-vL-5v8" secondAttribute="trailingMargin" id="Exg-HA-KYw"/>
+                            <constraint firstItem="aEb-aw-DXx" firstAttribute="leading" secondItem="mVo-vL-5v8" secondAttribute="leadingMargin" id="iJS-mS-Vj0"/>
+                            <constraint firstItem="aEb-aw-DXx" firstAttribute="top" secondItem="M9G-lY-y4G" secondAttribute="bottom" constant="59" id="uK5-mO-xiB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJe-KF-vU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2368.8000000000002" y="128.18590704647679"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JTr-S2-lOP">

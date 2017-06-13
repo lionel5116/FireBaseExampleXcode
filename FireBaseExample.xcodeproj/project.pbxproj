@@ -16,6 +16,7 @@
 		E20E4B931EEA0F210080BA88 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20E4B921EEA0F210080BA88 /* Bank.swift */; };
 		E20E4B951EEA13260080BA88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E20E4B941EEA13260080BA88 /* GoogleService-Info.plist */; };
 		E29982E61EEC5698000B2693 /* UpdateBanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29982E51EEC5698000B2693 /* UpdateBanksViewController.swift */; };
+		E29B6C7D1EF0540D00EC28E1 /* ManageExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B6C7C1EF0540D00EC28E1 /* ManageExpenseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E20E4B921EEA0F210080BA88 /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		E20E4B941EEA13260080BA88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E29982E51EEC5698000B2693 /* UpdateBanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateBanksViewController.swift; sourceTree = "<group>"; };
+		E29B6C7C1EF0540D00EC28E1 /* ManageExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageExpenseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				E20E4B8C1EEA0E5E0080BA88 /* Info.plist */,
 				E20E4B921EEA0F210080BA88 /* Bank.swift */,
 				E29982E51EEC5698000B2693 /* UpdateBanksViewController.swift */,
+				E29B6C7C1EF0540D00EC28E1 /* ManageExpenseViewController.swift */,
 			);
 			path = FireBaseExample;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				E20E4B831EEA0E5E0080BA88 /* ViewController.swift in Sources */,
 				E20E4B811EEA0E5E0080BA88 /* AppDelegate.swift in Sources */,
 				E29982E61EEC5698000B2693 /* UpdateBanksViewController.swift in Sources */,
+				E29B6C7D1EF0540D00EC28E1 /* ManageExpenseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
