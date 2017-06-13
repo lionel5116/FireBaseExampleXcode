@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5b0-Pd-4G4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FireBaseExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-wH-ShT">
+                                <rect key="frame" x="0.0" y="247" width="375" height="420"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="420" id="Mpc-6L-894"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ky-g5-vap">
+                                <rect key="frame" x="24" y="115" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="N5Q-Jx-s3U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Add Bank">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBankToFireBase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSN-Lf-Kyh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngA-VM-snf">
+                                <rect key="frame" x="36" y="156" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1mn-Vw-51J">
+                                <rect key="frame" x="31" y="194" width="320" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Balance" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsH-nR-Idb">
+                                <rect key="frame" x="31" y="234" width="320" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XW-m9-Xwh">
+                                <rect key="frame" x="81" y="270" width="190" height="32"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Go To Update">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToUpdateBanks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxd-EI-Kxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQI-MI-fOv">
+                                <rect key="frame" x="23" y="81" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get Banks">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getBanks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xc2-UD-Deu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1mn-Vw-51J" firstAttribute="trailing" secondItem="ngA-VM-snf" secondAttribute="trailing" id="3M6-Im-1z8"/>
+                            <constraint firstItem="bVS-wH-ShT" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="BWa-Ey-IHG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3XW-m9-Xwh" secondAttribute="trailing" constant="88" id="ChP-dK-l2Q"/>
+                            <constraint firstItem="CsH-nR-Idb" firstAttribute="leading" secondItem="1mn-Vw-51J" secondAttribute="leading" id="Exw-gz-D2g"/>
+                            <constraint firstItem="sQI-MI-fOv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="Gk9-mr-fMS"/>
+                            <constraint firstItem="3XW-m9-Xwh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="65" id="I0s-nx-AxQ"/>
+                            <constraint firstItem="ngA-VM-snf" firstAttribute="top" secondItem="3ky-g5-vap" secondAttribute="bottom" constant="11" id="Ihy-Bd-nkP"/>
+                            <constraint firstItem="3ky-g5-vap" firstAttribute="centerX" secondItem="1mn-Vw-51J" secondAttribute="centerX" id="OGe-35-Nb1"/>
+                            <constraint firstItem="sQI-MI-fOv" firstAttribute="centerX" secondItem="1mn-Vw-51J" secondAttribute="centerX" id="S4I-xu-rhc"/>
+                            <constraint firstItem="CsH-nR-Idb" firstAttribute="trailing" secondItem="1mn-Vw-51J" secondAttribute="trailing" id="SCl-c8-WMs"/>
+                            <constraint firstItem="sQI-MI-fOv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="SZN-ZU-TI1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ngA-VM-snf" secondAttribute="trailing" constant="8" id="Yss-ma-FtN"/>
+                            <constraint firstItem="3ky-g5-vap" firstAttribute="top" secondItem="sQI-MI-fOv" secondAttribute="bottom" constant="4" id="ZS7-vH-eAT"/>
+                            <constraint firstItem="bVS-wH-ShT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bwv-YT-G8a"/>
+                            <constraint firstItem="3ky-g5-vap" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dys-1S-jgV"/>
+                            <constraint firstItem="1mn-Vw-51J" firstAttribute="top" secondItem="ngA-VM-snf" secondAttribute="bottom" constant="8" symbolic="YES" id="iJu-KO-2rE"/>
+                            <constraint firstItem="CsH-nR-Idb" firstAttribute="top" secondItem="1mn-Vw-51J" secondAttribute="bottom" constant="10" id="lrc-Um-Gt2"/>
+                            <constraint firstItem="3XW-m9-Xwh" firstAttribute="top" secondItem="CsH-nR-Idb" secondAttribute="bottom" constant="6" id="uYU-FD-BS8"/>
+                            <constraint firstAttribute="trailing" secondItem="bVS-wH-ShT" secondAttribute="trailing" id="w6p-7F-Ole"/>
+                            <constraint firstItem="3ky-g5-vap" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="xh0-My-x3f"/>
+                            <constraint firstItem="ngA-VM-snf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zLl-1N-5al"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f8N-af-2BB"/>
+                    <connections>
+                        <outlet property="tvBankList" destination="bVS-wH-ShT" id="SMc-rX-rbA"/>
+                        <outlet property="txtBankBalance" destination="CsH-nR-Idb" id="Ysl-fp-K45"/>
+                        <outlet property="txtBankName" destination="ngA-VM-snf" id="thY-MB-h2f"/>
+                        <outlet property="txtBankType" destination="1mn-Vw-51J" id="wTT-Sg-wrh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Update Banks View Controller-->
+        <scene sceneID="sK1-y7-Old">
+            <objects>
+                <viewController storyboardIdentifier="UpdateBanksViewController" id="hbZ-jm-8ch" customClass="UpdateBanksViewController" customModule="FireBaseExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LZN-Xt-5Ep"/>
+                        <viewControllerLayoutGuide type="bottom" id="h5b-Yw-lUp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rxh-Ib-KAk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyD-a2-oUd">
+                                <rect key="frame" x="23" y="113" width="320" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6oK-el-SEG">
+                                <rect key="frame" x="23" y="151" width="320" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bank Balance" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Npq-vS-KFX">
+                                <rect key="frame" x="23" y="189" width="320" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iZ-Th-eJx">
+                                <rect key="frame" x="30" y="79" width="306" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-7V-mkd">
+                                <rect key="frame" x="84" y="245" width="207" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ddy-dS-NuQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Update Bank">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateBank:" destination="hbZ-jm-8ch" eventType="touchUpInside" id="TxG-T7-GYv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6oK-el-SEG" firstAttribute="leading" secondItem="NyD-a2-oUd" secondAttribute="leading" id="00K-d9-KE7"/>
+                            <constraint firstItem="NyD-a2-oUd" firstAttribute="top" secondItem="LZN-Xt-5Ep" secondAttribute="bottom" constant="93" id="0Zi-Iw-Vcu"/>
+                            <constraint firstItem="FjO-7V-mkd" firstAttribute="leading" secondItem="Rxh-Ib-KAk" secondAttribute="leadingMargin" constant="68" id="4mO-X5-pwL"/>
+                            <constraint firstItem="Npq-vS-KFX" firstAttribute="top" secondItem="6oK-el-SEG" secondAttribute="bottom" constant="8" symbolic="YES" id="Fej-rP-j5R"/>
+                            <constraint firstItem="6oK-el-SEG" firstAttribute="trailing" secondItem="NyD-a2-oUd" secondAttribute="trailing" id="GcD-4P-zYY"/>
+                            <constraint firstItem="6iZ-Th-eJx" firstAttribute="centerX" secondItem="NyD-a2-oUd" secondAttribute="centerX" id="Mbr-ke-LiL"/>
+                            <constraint firstItem="6oK-el-SEG" firstAttribute="top" secondItem="NyD-a2-oUd" secondAttribute="bottom" constant="8" symbolic="YES" id="NvM-La-9eo"/>
+                            <constraint firstItem="NyD-a2-oUd" firstAttribute="leading" secondItem="Rxh-Ib-KAk" secondAttribute="leadingMargin" constant="7" id="Oog-hu-Hzz"/>
+                            <constraint firstItem="NyD-a2-oUd" firstAttribute="top" secondItem="6iZ-Th-eJx" secondAttribute="bottom" constant="13" id="UVt-cF-q3e"/>
+                            <constraint firstItem="FjO-7V-mkd" firstAttribute="centerX" secondItem="Rxh-Ib-KAk" secondAttribute="centerX" id="UwZ-jI-xV8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NyD-a2-oUd" secondAttribute="trailing" constant="16" id="akQ-Kv-khC"/>
+                            <constraint firstItem="6iZ-Th-eJx" firstAttribute="top" secondItem="LZN-Xt-5Ep" secondAttribute="bottom" constant="59" id="bM6-QV-D1O"/>
+                            <constraint firstItem="6iZ-Th-eJx" firstAttribute="leading" secondItem="Rxh-Ib-KAk" secondAttribute="leadingMargin" constant="14" id="gEc-Q7-4UZ"/>
+                            <constraint firstItem="Npq-vS-KFX" firstAttribute="leading" secondItem="6oK-el-SEG" secondAttribute="leading" id="gVM-eT-KcU"/>
+                            <constraint firstItem="FjO-7V-mkd" firstAttribute="top" secondItem="Npq-vS-KFX" secondAttribute="bottom" constant="26" id="htQ-Ev-7qU"/>
+                            <constraint firstItem="Npq-vS-KFX" firstAttribute="trailing" secondItem="6oK-el-SEG" secondAttribute="trailing" id="xPw-9P-GHK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblFireBaseKey" destination="6iZ-Th-eJx" id="m9T-cx-1zU"/>
+                        <outlet property="txtBankBalance" destination="Npq-vS-KFX" id="D4O-6Q-fGz"/>
+                        <outlet property="txtBankName" destination="NyD-a2-oUd" id="ZPu-im-Dzg"/>
+                        <outlet property="txtBankType" destination="6oK-el-SEG" id="nhj-vM-2Re"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hoc-0e-1Ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696.8" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JTr-S2-lOP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5b0-Pd-4G4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UA2-eg-QHR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZWn-lw-KHI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqW-xe-vtb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
